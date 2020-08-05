@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.Infomation {
+  opacity: 1;
+  position: relative; }
+  .Infomation .info-title {
+    color: white;
+    display: block; }
+    .Infomation .info-title .city {
+      font-weight: 600;
+      font-size: 50px;
+      text-align: left;
+      padding: 5px 0px; }
+    .Infomation .info-title .time {
+      font-weight: 400;
+      font-size: 25px;
+      text-align: left;
+      padding: 5px 0px; }
+  .Infomation .info-content {
+    margin-top: 50px; }

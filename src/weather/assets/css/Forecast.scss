@@ -1,0 +1,48 @@
+.Forecast {
+    transition: all 0.8s ease 0.5s;
+    .fore-title {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .fore-content {
+        width: 100%;
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: 20px 0 40px 0;
+        .fore-group-list {
+            margin-top: 20px;
+            display: flex;
+            list-style-type: none;
+            padding-bottom: 20px;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            transition-delay: 0.05s;
+            .fore-group-list-item {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 0px 5px;
+                border-radius: 5px;
+                min-width: 140px;
+                .fgli {
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    &.time {
+                        margin: 0;
+                        font-size: 17px;
+                    }
+                    &.fore-tem {
+                        font-size: 25px;
+                    }
+                }
+                .fore-img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    
+}

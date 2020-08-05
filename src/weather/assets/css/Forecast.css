@@ -1,0 +1,38 @@
+.Forecast {
+  transition: all 0.8s ease 0.5s; }
+  .Forecast .fore-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 400; }
+  .Forecast .fore-content {
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 20px 0 40px 0; }
+    .Forecast .fore-content .fore-group-list {
+      margin-top: 20px;
+      display: flex;
+      list-style-type: none;
+      padding-bottom: 20px;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      transition-delay: 0.05s; }
+      .Forecast .fore-content .fore-group-list .fore-group-list-item {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        margin: 0px 5px;
+        border-radius: 5px;
+        min-width: 140px; }
+        .Forecast .fore-content .fore-group-list .fore-group-list-item .fgli {
+          color: white;
+          text-align: center; }
+          .Forecast .fore-content .fore-group-list .fore-group-list-item .fgli.time {
+            margin: 0;
+            font-size: 17px; }
+          .Forecast .fore-content .fore-group-list .fore-group-list-item .fgli.fore-tem {
+            font-size: 25px; }
+        .Forecast .fore-content .fore-group-list .fore-group-list-item .fore-img {
+          margin: 0 auto; }
