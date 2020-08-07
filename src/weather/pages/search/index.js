@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {useDispatch, useSelector} from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -13,10 +13,10 @@ import WeatherToday from '../../components/WeatherToday';
 import Forecast from '../result/index'
 import '../../assets/css/Weather.css'
 
+
 import {searchForecast} from '../result/action'
 
-
-export default function FormInput() {
+ export default function FormInput() {
   const classes = useStyles();
   const [keyword, setKeyword] = useState("")
   const [show, setShow] = useState(false)
@@ -83,6 +83,7 @@ export default function FormInput() {
     
   );
 }
+
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '5px 4px',

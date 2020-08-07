@@ -5,35 +5,35 @@ import * as Urls from '../constants/Config'
 
 function WeatherToday(props) {
     const {weather} = props
-    const data = []
-    var date = new Date(weather.dt * 1000);
-    var dateSunrise = new Date(weather.sys.sunrise * 1000);
-    var dateSunset = new Date(weather.sys.sunset * 1000);
-    data.push({
-        value: Math.ceil(weather.main.temp_max)+"°",
-        text: 'Hight'
-    })
-    data.push({
-        value: Math.floor(weather.wind.speed) + 'mph',
-        text: 'Wind'
-    })
-    data.push({
-        value: dateSunrise.getHours()+ ':'+ dateSunrise.getMinutes(),
-        text: 'Sunrise'
-    })
-    data.push({
-        value: Math.floor(weather.main.temp_min)+"°",
-        text: 'Low'
-    })
-    data.push({
-        value: weather.main.humidity + '%',
-        text: 'Rain'
-    })
-    data.push({
-        value: dateSunset.getHours()+ ':'+ dateSunset.getMinutes(),
-        text: 'Sunset'
-    })
-    
+    let date = new Date(weather.dt * 1000);
+    let dateSunrise = new Date(weather.sys.sunrise * 1000);
+    let dateSunset = new Date(weather.sys.sunset * 1000);
+    const data = [
+        {
+            value: Math.ceil(weather.main.temp_max)+"°",
+            text: 'Hight'
+        },
+        {
+            value: Math.floor(weather.wind.speed) + 'mph',
+            text: 'Wind'
+        },
+        {
+            value: dateSunrise.getHours()+ ':'+ dateSunrise.getMinutes(),
+            text: 'Sunrise'
+        },
+        {
+            value: Math.floor(weather.main.temp_min)+"°",
+            text: 'Low'
+        },
+        {
+            value: weather.main.humidity + '%',
+            text: 'Rain'
+        },
+        {
+            value: dateSunset.getHours()+ ':'+ dateSunset.getMinutes(),
+            text: 'Sunset'
+        }
+    ]
   return (
     <div className="Infomation">
         <div className="info-title" >
