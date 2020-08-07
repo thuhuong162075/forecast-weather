@@ -14,7 +14,6 @@ import Forecast from '../result/index'
 import '../../assets/css/Weather.css'
 
 import {searchForecast} from '../result/action'
-import {loadingSearchForecast, dataSearchForecast} from '../result/reselect'
 
 
 export default function FormInput() {
@@ -26,11 +25,6 @@ export default function FormInput() {
     loading: loadingSearchWeather,
     dataWeather: dataSearchWeather
   }));
-  const {load, dataForecast} = useSelector(createStructuredSelector({
-      load: loadingSearchForecast,
-      dataForecast: dataSearchForecast
-  }));
-
   const changeInput = (event) => {
     let key = event.target.value;
     setKeyword(key)
@@ -75,12 +69,7 @@ export default function FormInput() {
                 Object.keys(dataWeather).length>0 ? (
                   <div className="info-search">
                     <WeatherToday weather={dataWeather}/>
-                    {load ? (
-                      <Spinner className="my-3" animation="border" />
-                    ) : (
-                      <Forecast forecast={dataForecast.list}/>
-                    )
-                  }
+                    <Forecast />
                   </div>
                   ) : (
                     <div className="notfound">Not found data</div>
