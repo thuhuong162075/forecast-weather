@@ -1,17 +1,39 @@
-.WeatherToday .temperature {
-  font-size: 100px;
-  color: white; }
-.WeatherToday .tem-detail {
-  color: white;
-  font-size: 25px;
-  font-weight: 400; }
-.WeatherToday .list-grid-tem-time {
-  margin: 10px 0;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.2); }
-  .WeatherToday .list-grid-tem-time .detail-list-grid-time .list-tem {
-    text-align: center;
+* {
+  padding: 0;
+  margin: 0; }
+
+.Infomation {
+  opacity: 1;
+  position: relative; }
+  .Infomation .info-title {
     color: white;
-    font-size: 20px; }
-    .WeatherToday .list-grid-tem-time .detail-list-grid-time .list-tem.time {
-      margin: 10px 0; }
+    display: block; }
+    .Infomation .info-title .city {
+      font-weight: 600;
+      font-size: 35px;
+      text-align: left;
+      padding: 5px 0px; }
+    .Infomation .info-title .time {
+      font-weight: 400;
+      font-size: 20px;
+      text-align: left;
+      padding: 5px 0px; }
+  .Infomation .info-content {
+    margin-top: 50px; }
+    .Infomation .info-content .WeatherToday .temperature {
+      font-size: 100px;
+      color: white; }
+    .Infomation .info-content .WeatherToday .tem-detail {
+      color: white;
+      font-size: 25px;
+      font-weight: 400; }
+    .Infomation .info-content .WeatherToday .list-grid-tem-time {
+      margin: 10px 0;
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 0.2); }
+      .Infomation .info-content .WeatherToday .list-grid-tem-time .detail-list-grid-time .list-tem {
+        text-align: center;
+        color: white;
+        font-size: 20px; }
+        .Infomation .info-content .WeatherToday .list-grid-tem-time .detail-list-grid-time .list-tem.time {
+          margin: 10px 0; }

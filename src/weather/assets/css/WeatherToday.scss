@@ -1,24 +1,51 @@
-.WeatherToday {
-    .temperature {
-        font-size: 100px;
+* {
+    padding: 0;
+    margin: 0;
+}
+.Infomation {
+    opacity: 1;
+    position: relative;
+    .info-title {
         color: rgb(255, 255, 255);
+        display: block;
+        .city {
+            font-weight: 600;
+            font-size: 35px;
+            text-align: left;
+            padding: 5px 0px;
+        }
+        .time {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: left;
+            padding: 5px 0px;
+        }
     }
-    .tem-detail {
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-        font-weight: 400;
-    }
-    .list-grid-tem-time {
-        margin: 10px 0;
-        border-radius: 30px;
-        background-color: rgba(255, 255, 255, 0.2);
-        .detail-list-grid-time {
-            .list-tem {
-                text-align: center;
+    .info-content {
+        margin-top: 50px;
+        .WeatherToday {
+            .temperature {
+                font-size: 100px;
                 color: rgb(255, 255, 255);
-                font-size: 20px;
-                &.time {
-                    margin: 10px 0;
+            }
+            .tem-detail {
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                font-weight: 400;
+            }
+            .list-grid-tem-time {
+                margin: 10px 0;
+                border-radius: 30px;
+                background-color: rgba(255, 255, 255, 0.2);
+                .detail-list-grid-time {
+                    .list-tem {
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                        font-size: 20px;
+                        &.time {
+                            margin: 10px 0;
+                        }
+                    }
                 }
             }
         }
